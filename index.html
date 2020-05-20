@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Assignment 9 egg catcher</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,900"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <audio class="audiochic">
+        <source src="sounds-20200415T160935Z-001/sounds/happy chicken.mp3" />
+      </audio>
+      <audio class="audioegg">
+        <source src="sounds-20200415T160935Z-001/sounds/fly.mp3" />
+      </audio>
+      <audio class="audioscore">
+        <source src="sounds-20200415T160935Z-001/sounds/score.mp3" />
+      </audio>
+      <audio class="audiogameover">
+        <source src="sounds-20200415T160935Z-001/sounds/game over.mp3" />
+      </audio>
+      <div class="position-absolute" id="score">Score 0</div>
+      <div class="position-absolute" id="life">Life 10</div>
+
+      <div id="start">
+        <h1>HAPPY EGGS</h1>
+        <button onclick="playGame()" id="startGame">Play</button>
+      </div>
+      <div id="end">
+        <h1>HAPPY EGGS</h1>
+        <h1 id="yourscore"></h1>
+        <button onclick="playAgainGame()" id="endGame">Play Again</button>
+      </div>
+      <div class="container">
+        <div class="row text-center hen">
+          <div class="col position-relative">
+            <img class="chic position-absolute" src="images/Happy_hen.svg" />
+            <img class="egg1 position-relative" src="images/Happy_Egg.svg" />
+          </div>
+          <div class="col position-relative">
+            <img class="chic position-absolute" src="images/Happy_hen.svg" />
+            <img class="egg2 position-relative" src="images/Happy_Egg.svg" />
+          </div>
+          <div class="col position-relative">
+            <img class="chic position-absolute" src="images/Happy_hen.svg" />
+            <img class="egg3 position-relative" src="images/Happy_Egg.svg" />
+          </div>
+        </div>
+      </div>
+      <!-------------------------------->
+
+      <!--------------------------------->
+      <div>
+        <div id="basket">
+          <h3 class="text-center pt-2 font-weight-bolder"></h3>
+        </div>
+        <!--<img id="basket" src="images/Basket.svg" />-->
+        <img id="eggbroken1" src="images/Broken_Egg.svg" />
+        <img id="eggbroken2" src="images/Broken_Egg.svg" />
+        <img id="eggbroken3" src="images/Broken_Egg.svg" />
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
